@@ -48,6 +48,8 @@ jobs:
       UPSTASH_REDIS_REST_LOCKER_TOKEN: ci_srh_token
       RESEND_API_KEY: re_ci_dummy
       NEXT_PUBLIC_WEBHOOK_BASE_HOST: localhost
+      NEXT_PUBLIC_APP_BASE_HOST: localhost
+      NEXT_PUBLIC_MARKETING_URL: http://localhost:3000
       NEXT_TELEMETRY_DISABLED: "1"
     steps:
       - uses: actions/checkout@v4
