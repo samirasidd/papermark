@@ -51,6 +51,8 @@ jobs:
       NEXT_PUBLIC_APP_BASE_HOST: localhost
       NEXT_PUBLIC_MARKETING_URL: http://localhost:3000
       NEXT_TELEMETRY_DISABLED: "1"
+      STRIPE_SECRET_KEY: sk_test_dummy
+      STRIPE_WEBHOOK_SECRET: whsec_dummy
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
