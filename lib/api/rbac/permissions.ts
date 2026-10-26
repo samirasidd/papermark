@@ -52,7 +52,7 @@ const ALL_PERMISSIONS: PermissionAction[] = [
 ];
 
 // MANAGER gets everything except the admin-only structural operations.
-const MANAGER_DENIED: PermissionAction[] = ["members.write", "sso.write"];
+const MANAGER_DENIED: PermissionAction[] = [];
 
 // MEMBER keeps today's broad behaviour: team read/write minus the
 // admin/manager-only structural operations.
