@@ -40,8 +40,22 @@ function check(name, ok, detail) {
 
 const a = await makeUser("a");
 const b = await makeUser("b");
+// const doc = await prisma.document.create({
+//   data: { name: `secret-${tag}.pdf`, file: "ci/secret.pdf", teamId: a.team.id },
+// });
 const doc = await prisma.document.create({
-  data: { name: `secret-${tag}.pdf`, file: "ci/secret.pdf", teamId: a.team.id },
+  data: {
+    name: `secret-${tag}.pdf`,
+    file: "ci/secret.pdf",
+    teamId: a.team.id,
+    versions: {
+      create: {
+        versionNumber: 1,
+        file: "ci/secret.pdf",
+        isPrimary: true,
+      },
+    },
+  },
 });
 const folder = await prisma.folder.create({
   data: { name: `secret-folder-${tag}`, path: `/secret-${tag}`, teamId: a.team.id },
