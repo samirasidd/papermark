@@ -52,6 +52,8 @@ jobs:
       NEXT_PUBLIC_MARKETING_URL: http://localhost:3000
       STRIPE_SECRET_KEY_OLD: sk_test_ci_dummy_old
       QSTASH_TOKEN: ci_dummy_qstash_token
+      HANKO_API_KEY: ci_dummy_hanko_key
+      NEXT_PUBLIC_HANKO_TENANT_ID: ci_dummy_tenant
       NEXT_TELEMETRY_DISABLED: "1"
       STRIPE_SECRET_KEY: sk_test_dummy
       STRIPE_WEBHOOK_SECRET: whsec_dummy
