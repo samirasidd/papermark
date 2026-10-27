@@ -50,6 +50,8 @@ jobs:
       NEXT_PUBLIC_WEBHOOK_BASE_HOST: localhost
       NEXT_PUBLIC_APP_BASE_HOST: localhost
       NEXT_PUBLIC_MARKETING_URL: http://localhost:3000
+      STRIPE_SECRET_KEY_OLD: sk_test_ci_dummy_old
+      QSTASH_TOKEN: ci_dummy_qstash_token
       NEXT_TELEMETRY_DISABLED: "1"
       STRIPE_SECRET_KEY: sk_test_dummy
       STRIPE_WEBHOOK_SECRET: whsec_dummy
