@@ -77,7 +77,7 @@ jobs:
           tail -n 80 app.log
           exit 1
       - name: IDOR smoke test
-        run: node scripts/idor-smoke-test.mjs
+        run: node .github/scripts/idor-smoke-test.mjs
       - name: App log on failure
         if: failure()
         run: tail -n 80 app.log
