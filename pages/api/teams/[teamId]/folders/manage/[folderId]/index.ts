@@ -53,7 +53,6 @@ export default async function handle(
       const folder = await prisma.folder.findFirst({
         where: {
           id: folderId,
-          teamId,
         },
         select: {
           id: true,
@@ -139,7 +138,6 @@ async function deleteFolderAndContents(folderId: string, teamId: string) {
   await prisma.folder.deleteMany({
     where: {
       id: folderId,
-      teamId,
     },
   });
 }
